@@ -1,9 +1,9 @@
 body{
-  background:url(gold-of-egypt-logo-pattern-opacity-30.png) #FCF9ED no-repeat 49.5%;
+  background:url(gold-of-egypt-logo-pattern-opacity-30.png) #000000 no-repeat 49.5%;
   color: rgb(56, 56, 56);
 }
 .input-group{
-  width: 33%; 
+  width: 30%; 
   padding:5px;
 }
 #canvasWrapper{
@@ -17,15 +17,14 @@ body{
   font-family: 'Comic Sans MS';
   font-size: 22;
   font-weight:bolder;
+  color:rgb(163, 145, 97) ;
 }
-#reset{
+.btn{
   font-weight:bolder;
   padding: -1px 0px;
+  margin: 4px;
 }
-#all{
-  font-weight:bolder;
-  margin: 5px;
-}
+
 @media only screen and (max-width:700px){
   
 }
