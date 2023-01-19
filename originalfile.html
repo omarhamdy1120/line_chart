@@ -112,7 +112,7 @@ var Dollar='$';
 
 //CopyRight Title
 const footer = (tooltipItems) => {
-  var sum = '© dahabmasr.';
+  var sum = '© dahabmasr';
   return  sum;
 };
 
@@ -172,7 +172,7 @@ var ctx = document.getElementById('canvas').getContext('2d');
 
             fill:false,
             yAxisID: 'USD',
-            barPercentage :0.6
+            barPercentage :0.8
 
          }]
          
@@ -425,7 +425,25 @@ var ctx = document.getElementById('canvas').getContext('2d');
    });
 
 
-
+/* Vertical Line When hover 
+chart.canvas.addEventListener('mousemove', (e) => {
+   crosshair (chart, e);
+})
+function crosshair (chart, mousemove) {
+   chart.update ('none');
+   const x = mousemove.offsetX;
+   const { ctx, chartArea: { top, bottom, left, right, width, height } } = chart;
+   ctx.save();
+   ctx.strokeStyle = '#8B7E74';
+   ctx. lineWidth = 2;
+   if (mousemove.offsetX >= left && mousemove.offsetX <= right) {
+      ctx.beginPath();
+      ctx.moveTo (mousemove.offsetX,top);
+      ctx.lineTo (mousemove.offsetX, bottom);
+      ctx.stroke();
+      ctx.closePath();
+   }
+}*/
 
 
 //Filter Between Two Date 
@@ -462,7 +480,7 @@ function filterData() {
 $(".dates").change(filterData);
 
 
-   //Filter Using Button
+//Filter Using Button
 
    //Filter Five Months
    function fiveMonth() {
@@ -493,7 +511,7 @@ $(".dates").change(filterData);
    }
    $("#year").click(lastYear);
 
-//End Filter
+//End Filter Button
 
 //Reset Chart (Zoom & Filter)
 function reset() {
@@ -510,6 +528,20 @@ $("#reset").click(reset);
 
 
 
+/*function resetzom() {
+chart.resetZoom();
+//chart.config.options.scales.x.min = '2022-01-01';
+
+chart.update();
+
+}
+$("#resetZoom").click(resetzom);
+*/
+
+//    }).resize();
+
+
+//resize
 
    
 
